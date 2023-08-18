@@ -27,7 +27,7 @@ function Home() {
           </div>
         </div>
         <div className="animate__fadeInRightBig animate__animated">
-          <img src="src/assets/HeroProfil.png" alt="" />
+          <img src="../assets/HeroProfil.png" alt="" />
         </div>
       </div>
       <div className="IconContainerHero">
