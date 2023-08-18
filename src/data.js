@@ -4,7 +4,7 @@ export const data = [
     title: "Test Data",
     explanation:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo, sunt mollitia quisquam quo quia, ",
-    img: "..src/assets/t.png",
+    img: "..src/assets/TestProjectScreen.png",
     alt: "Test?",
     projectsLink: "https://loginscren.netlify.app/",
   },
