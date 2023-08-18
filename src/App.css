@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Raleway:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  background: #e5e5e5;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+input {
+  border: none;
+}
+
+:root {
+  --bg-line: #25282b;
+  --bg-yellow: #fdc435;
+  --bg-gray: #f9faff;
+  --bg-white: #ffffff;
+
+  --font-high-emphasis: #25282b;
+  --font-medium-emphasis: #828282;
+  --font-low-emphasis: #9a9fa8;
+
+  --font-size-title: 64px;
+  --font-size-normal: 18px;
+
+  --font-family-playfair: "Playfair Display";
+  --font-family-nunito: "Nunito";
+  --font-family-roboto: "Roboto";
+  --font-family-raleway: "Raleway";
+
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: var(--font-family-roboto);
+}
+
+.title {
+  color: var(--font-high-emphasis);
+  font-family: var(--font-family-playfair), serif;
+  font-size: var(--font-size-title);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+}
+
+.btn-yellow {
+  padding: 8px 24px;
+  color: var(--font-high-emphasis);
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  border-radius: 8px;
+  font-family: var(--font-family-roboto);
+  line-height: 150%;
+  cursor: pointer;
+  background-color: var(--bg-yellow);
+}
+.btn-outline {
+  padding: 8px 24px;
+  color: var(--font-high-emphasis);
+  background-color: none;
+  font-size: var(--font-size-normal);
+  font-family: var(--font-family-roboto);
+  border-radius: 8px;
+  line-height: 150%;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--font-high-emphasis);
+}
+
+.link {
+  color: var(--font-high-emphasis);
+  font-family: var(--font-family-raleway);
+  font-size: var(--font-size-normal);
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: 0.4s all;
+}
+.link:hover,
+.active-link {
+  background-color: var(--bg-line);
+  color: var(--bg-white);
+}
+
+.input {
+  border-radius: 4px;
+  border: 1px solid #e8ecf4;
+  padding: 8px 24px;
+  background: var(--bg-white);
+  font-size: var(--font-size-normal);
+  font-weight: 600;
+  font-family: var(--font-family-raleway);
+}
+
+.textarea {
+  border-radius: 8px;
+  padding: 8px 12px;
+  border: 1px solid #e8ecf4;
+  background: var(--bg-white);
+  font-size: var(--font-size-normal);
+  font-weight: 600;
+  font-family: var(--font-family-raleway);
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border: 1px solid var(--bg-yellow);
+}
+
+.tag {
+  color: var(--brand-yellow, #fdc435);
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 124px;
+}
+
+nav .link {
+  margin-left: 48px;
+}
+
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 46px 0;
+  flex-wrap: wrap;
+}
+.Hero .HeroTextContainer {
+  max-width: 486px;
+}
+
+.Hero .HeroTextContainer p {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+  font-family: var(--font-family-nunito);
+  color: var(--font-medium-emphasis);
+  text-align: justify;
+}
+
+.BtnContainer button {
+  margin-right: 16px;
+}
+
+.IconContainer {
+  color: var(--font-high-emphasis);
+}
+
+.IconContainerHero {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 144px;
+}
+.ProjectsIconContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.IconLink {
+  color: var(--font-high-emphasis);
+  cursor: pointer;
+  margin-right: 24px;
+}
+.AboutTextContainer {
+  margin-right: 88px;
+  max-width: 588px;
+}
+
+.AboutTextContainer h2 {
+  margin-bottom: 32px;
+}
+
+.AboutTextContainer p {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+  font-family: var(--font-family-nunito);
+  color: var(--font-medium-emphasis);
+  text-align: justify;
+  margin-bottom: 32px;
+}
+
+.About {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 46px 120px;
+}
+
+.Forms {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 12rem auto 3rem auto;
+}
+.Forms h1 {
+  text-align: center;
+  text-decoration: 2px var(--bg-yellow) underline;
+  text-underline-offset: 16px;
+  margin-bottom: 2.5rem;
+}
+
+.Projects h1 {
+  text-align: center;
+  text-decoration: 2px var(--bg-yellow) underline;
+  text-underline-offset: 16px;
+  margin-bottom: 5rem;
+}
+
+.Forms label {
+  margin: 25px 0px 2.5px 0px;
+}
+
+.Forms .textarea {
+  margin-bottom: 1rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px auto 1.5rem auto;
+  max-width: 1056px;
+}
+
+.card h3 {
+  color: var(--font-high-emphasis);
+  font-family: var(--font-family-playfair);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+
+.card p {
+  color: var(--font-medium-emphasis);
+  font-family: var(--font-family-nunito);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+
+.cardTextContainer {
+  max-width: 410px;
+  margin-right: 38px;
+}
+
+.Projects {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.CardImg img {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  max-width: 496px;
+}
+
+.animate__animated .animate__fadeInLeft .animate__bounceInUp {
+  --animate-duration: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .Hero {
+    flex-direction: column;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 1rem;
+  }
+  .HeroTextContainer {
+    display: inline;
+  }
+  .IconContainer {
+    margin: 0px;
+  }
+  .IconContainerHero {
+    margin: 0px;
+  }
+  .About {
+    flex-direction: column;
+    margin: 2.5rem auto;
+  }
+  .AboutTextContainer {
+    width: 100%;
+    margin: auto;
+  }
+  .Forms {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .card {
+    flex-direction: column-reverse;
+  }
+  .card img {
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Forms {
+    max-width: 588px;
+    margin-bottom: 4rem;
+  }
+  nav ul.bottom-bar {
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; /* İconları yatayda sıralamak için flex yönlendirmesini ayarlayın */
+    justify-content: space-evenly; /* İconları yatayda ortala */
+    align-items: center; /* İconları dikeyde ortala */
+    background-color: var(--bg-line);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 0;
+  }
+
+  nav ul.bottom-bar .link {
+    display: flex; /* İkonları dikeyde ve yatayda ortalamak için flex kullanın */
+    align-items: center; /* İkonları dikeyde ortala */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .IconContainerHero {
+    margin-bottom: 5rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 588px) {
+  .Container {
+    padding: 1rem;
+  }
+}
